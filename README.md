@@ -26,13 +26,30 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] Mention two parts of Express that you learned about this week.
 
+1. I learned server-side routing which is similar to routers in react giving us the ability to create url's that route us to different pages, only difference is we use api's to hand CRUD operations.
+2. Also using middleware functions calls to add more functionality to our api endpoints.
+
 - [ ] Describe Middleware?
+
+-- Middleware provide a way to extend the features provided by the Express framework.
+
+--Middleware is a good way to catch errors, because it adds a
+part in the "chain" to catch things like missing parameters in the order 
+they are executed in the code.
 
 - [ ] Describe a Resource?
 
+-- Everything is a resource. Each resource can be accessed through a unique URL. Resources can have multiple representations and can be managed through HTTP methods.
+
 - [ ] What can the API return to help clients know if a request was successful?
 
+--A JSON message
+
+---- Also return a res.status that shows us if something was successfull 200, not found 400 or a sever error 500
+
 - [ ] How can we partition our application into sub-applications?
+
+ setting up routes for each one, such as /projects and /projects/id
 
 ## Project Setup
 
